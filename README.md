@@ -1,15 +1,29 @@
-# Basic Sample Hardhat Project
+# Spotify Web 3 Contracts | TobyDev
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+The frontend-repo is here: https://github.com/leopacheco18/spotifyWeb3
 
-Try running some of the following tasks:
+This project try to replicate spotify but with web3 tech. Any artist can upload a new album and this new album will be a Smart Contract and the songs will be NTF's minted from this new smart contract. You can play the songs and also see on OpenSea
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+### Steps to Run
+
+1. Clone this repository.
+
+`git clone https://github.com/leopacheco18/spotifyWeb3Contracts.git`
+
+2. Open the folder
+   
+`cd spotifyWeb3Contracts`
+
+3. Install dependencies
+
+`npm install`  
+or
+`yarn install`  
+
+4. Setup your private keys by renaming `.env.example` to `.env` and add your private keys for:
+   1. Your Wallet Address private key.
+   2. Mumbai RPC URL you can use Avalanche for this.
+
+5. Run the code:
+
+ `yarn hardhat run scripts/deploy.py`
